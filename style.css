@@ -1,0 +1,66 @@
+.centered {
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-image: url(sportshalloverhead-opaque.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: xx-large;
+}
+
+#popoutBackground {
+  background-color: white;
+  overflow: hidden;
+  margin: 20px 0 20px 0;
+}
+
+header {
+  display:flex;
+  justify-content: center;
+  font-size: xxx-large;
+}
+
+p {
+  margin: 5px;
+  padding: 2px;
+}
+
+#map {
+  margin: 10px 0 10px 0;
+}
+
+
+@media (min-width: 500px) {
+  #map {
+    overflow:hidden;
+    max-width:100%;
+    width:500px;
+    height:500px;
+  }
+}
+
+@media (max-width: 500px) {
+  #map {
+    overflow:hidden;
+    max-width:100%;
+    width:250;
+    height:250;
+  }
+}
